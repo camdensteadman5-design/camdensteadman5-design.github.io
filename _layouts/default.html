@@ -11,7 +11,11 @@
   <body>
     {% include nav.html %}
     {{ content }}
-
+    <main class="content-wrapper">
+      
+{% if page.hero%} 
+    <section class="page_hero">
+      <h1>{{ page.hero }}</h1>
     {% include footer.html %}
  </body>
 </html>
